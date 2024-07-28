@@ -1,5 +1,0 @@
-# Compile both modules (javac follows the dependency to util)
-javac -d out --module-source-path src -m mymodule
-
-# Run the mymodule module and show module resolution
-java --show-module-resolution -p out -m mymodule/com.pluralsight.Main

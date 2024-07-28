@@ -1,7 +1,0 @@
-{
-  "extensions": [
-    "ms-vscode.cmake-tools",
-    "ms-vscode.cptools"
-   ],
-   "postttCreateCommand": "sudo apt-get update && sudo apt-get install g++ gcc gbd ninja-build zip rsync cmake-y"
-}

@@ -1,3 +1,0 @@
-# learn-python
-
-Learning python

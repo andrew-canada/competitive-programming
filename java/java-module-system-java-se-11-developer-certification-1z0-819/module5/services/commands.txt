@@ -1,8 +1,0 @@
-# Compile all modules (javac automatically follows the dependency to greeter.api, but not to the service provider modules)
-javac -d out --module-source-path src -m greeter.cli,greeter.friendly,greeter.hello
-
-# Run the greeter.cli module with the two compiled service providers
-java -p out -m greeter.cli/greeter.cli.Main
-
-# Run the greeter.cli module with an additional service provider in a modular JAR file
-java -p out:mods -m greeter.cli/greeter.cli.Main

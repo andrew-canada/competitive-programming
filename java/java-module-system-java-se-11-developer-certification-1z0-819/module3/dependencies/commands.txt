@@ -1,5 +1,0 @@
-# Compile both modules (javac follows the dependency to greeter.hello)
-javac -d out --module-source-path src -m greeter.cli
-
-# Run the greeter.cli module
-java -p out -m greeter.cli/greeter.cli.Main

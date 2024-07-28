@@ -1,6 +1,0 @@
-# Run from `creating_module1` directory
-rm -rf out # Optional to clear previous compilation results
-# -d sets output directory
-javac -d out src/com/javamodularity/greeter/Main.java src/module-info.java
-# -p sets the module path, -m the initial module to run
-java -p out -m greeter/com.javamodularity.greeter.Main

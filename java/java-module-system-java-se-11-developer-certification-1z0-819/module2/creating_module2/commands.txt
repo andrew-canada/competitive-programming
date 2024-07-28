@@ -1,6 +1,0 @@
-# Run from `creating_module2` directory
-rm -rf out # Optional to clear previous compilation results
-# -d sets output directory, --module-source path configures path where the compiler looks for module source directories, -m specifies the module to compile
-javac -d out --module-source-path src -m greeter
-# -p sets the module path, -m the initial module to run
-java -p out -m greeter/com.javamodularity.greeter.Main
