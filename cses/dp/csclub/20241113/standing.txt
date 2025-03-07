@@ -1,0 +1,5 @@
+The farmers will sit in a single narrow row of N seats 1 <= N <= 500000, numbered starting from 1 on the left. The only entrance to the row is on the left side, so getting to a seat entails passing by all lower-numbered seats, and making anyone who is in those seats stand up (temporarily).
+
+You are given the order in which the ticketholders will arrive: the i-th person to arrive has a ticket for seat number S(i) (1 <= S(i) <= N, all S(i) different).
+
+Determine the total number of instances in which someone will stand up to let someone else by.
