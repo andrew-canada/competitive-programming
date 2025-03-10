@@ -8,12 +8,19 @@ typedef long long ll;
 
 void solve()
 {
-    int m, k, a1, ak;
-    cin >> m >> k >> a1 >> ak;
-    int num1 = m % k, numK = m / k;
-    int fancy1 = max(0, num1 - a1), fancyK = max(0, numK - ak);
-    int l = max(0, a1 - num1), rep = min(l / k, fancyK);
-    cout << fancy1 + fancyK - rep << '\n';
+    int n;
+    cin >> n;
+    vector<ll> a(n);
+    ll ans = 0;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> a[i];
+    }
+    for (int i = 1; i < n; i++)
+    {
+        ans = gcd(ans, abs(a[i] - a[0]));
+    }
+    cout << 2 * ans << '\n';
 }
 
 int main()
