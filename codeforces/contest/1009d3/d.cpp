@@ -22,7 +22,7 @@ void solve()
     vector<array<ll, 2>> valid[m + 1];
     for (int i = 0; i < n; i++)
     {
-        for (int y = 0; y <= r[i]; y++)
+        for (ll y = 0; y <= r[i]; y++)
         {
             ll diff = sqrtl(r[i] * r[i] - y * y);
             valid[y].push_back({x[i] - diff, x[i] + diff});
